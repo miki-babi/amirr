@@ -17,8 +17,13 @@ var shopnowSlider = new Swiper('.shopnow-slider', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 2000, // Delay between slides in milliseconds (3000ms = 3s)
+    disableOnInteraction: false, // Auto play won't be disabled after user interactions (e.g., swiping)
   }
 });
+
 document.addEventListener('DOMContentLoaded', () => {
   const cards = document.querySelectorAll('.max-w-full');
 
